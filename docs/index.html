@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofia Jenckel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #030610;
+      color: #97c2c5;
+      font-family: 'Young Serif', serif;
+    }
+    h1, h2, h3, h4 {
+      color: #7f5da3;
+      font-family: 'Young Serif', serif;
+    }
+    h2.subtitle {
+      text-align: center;
+      margin-top: -10px;
+      font-size: 1.5rem;
+    }
+    .nav-tabs {
+      border-bottom: 2px solid #7f5da3;
+    }
+    .nav-tabs .nav-link {
+      color: #97c2c5;
+      font-family: 'Young Serif', serif;
+      border: none;
+    }
+    .nav-tabs .nav-link.active {
+      background-color: #7f5da3;
+      color: #fff;
+      border: 1px solid #7f5da3;
+    }
+    .contato a {
+      color: #97c2c5;
+      text-decoration: none;
+      margin: 0 10px;
+      font-family: 'Young Serif', serif;
+    }
+    .contato a:hover {
+      text-decoration: underline;
+    }
+    /* Cards de vídeo customizados */
+    .video-card {
+      background-color: #0a0f1f !important;
+      border: 1px solid #7f5da3 !important;
+      transition: transform 0.3s ease;
+    }
+    .video-card:hover {
+      transform: scale(1.02);
+    }
+    /* Transição suave nas abas */
+    .tab-pane {
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      transform: translateY(10px);
+    }
+    .tab-pane.show.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .tab-pane.fade {
+      opacity: 0;
+    }
+    /* Ajuste da foto principal */
+    .profile-pic {
+      max-width: 250px;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+      border: 3px solid #7f5da3;
+    }
+    /* Rodapé */
+    footer {
+      background-color: #0a0f1f;
+      color: #97c2c5;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      border-top: 2px solid #7f5da3;
+    }
+  </style>
+</head>
+<body class="p-4">
+
+  <h1 class="text-center mb-2">Sofia Jenckel</h1>
+  <h2 class="subtitle mb-4">Direção de Fotografia & Arte</h2>
+
+  <ul class="nav nav-tabs justify-content-center" id="portfolioTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="sobre-tab" data-bs-toggle="tab" data-bs-target="#sobre" type="button" role="tab">Sobre mim</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="projetos-tab" data-bs-toggle="tab" data-bs-target="#projetos" type="button" role="tab">Projetos</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contato-tab" data-bs-toggle="tab" data-bs-target="#contato" type="button" role="tab">Contato</button>
+    </li>
+  </ul>
+
+  <div class="tab-content mt-4" id="portfolioTabsContent">
+    
+    <div class="tab-pane fade show active text-center" id="sobre" role="tabpanel">
+      <img src="sof.jpg" alt="Foto de Sofia Jenckel" class="profile-pic">
+      <h2 class="mt-4">Sobre mim</h2>
+      <p>Cinema e Audiovisual - ESPM</p>
+      <p>História - USP</p>
+      <p class="container" style="max-width: 700px;">Desde criança sempre fui apaixonada por fazer vídeos e histórias com meus brinquedos, e agora realizo este sonho. Focada em fotografia, possuo experiência na área e uma paixão por capturar a vida em imagens.</p>
+      
+      <h2 class="mt-4">Formação</h2>
+      <p>Cinema e Audiovisual - ESPM (2026-2030)</p>
+      <p>Bacharelado em História - USP (2026-2030)</p>
+      <p>Curso de Fotografia e Audiovisual - Colégio Etapa (2023-2024)</p>
+      <p>Curso de férias de Cinema - AIC (2024)</p>
+      <p>Curso de Fotografia - Foto Conceito (2024)</p>
+      <p>Curso de férias de Fashion Filmmaking - ESPM (2026)</p>
+    </div>
+
+    <div class="tab-pane fade" id="projetos" role="tabpanel">
+      <h2 class="text-center mb-4">Meus Projetos</h2>
+
+      <ul class="nav nav-tabs justify-content-center" id="projetosSubTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="fotos-tab" data-bs-toggle="tab" data-bs-target="#fotos" type="button" role="tab">Fotografias</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab">Vídeos</button>
+        </li>
+      </ul>
+
+      <div class="tab-content mt-4" id="projetosSubTabsContent">
+        
+        <div class="tab-pane fade show active" id="fotos" role="tabpanel">
+          
+          <div class="text-center mb-5">
+            <h4>Carnaval São Paulo</h4>
+            <p>Fotografias tiradas durante o desfile de carnaval de São Paulo de 2026. Projeto pessoal.</p>
+            <div class="row row-cols-1 row-cols-md-2 g-3 justify-content-center">
+              <div class="col"><img src="car1.jpg" alt="Carnaval 1" class="img-fluid rounded"></div>
+              <div class="col"><img src="car2.jpg" alt="Carnaval 2" class="img-fluid rounded"></div>
+              <div class="col"><img src="car3.jpg" alt="Carnaval 3" class="img-fluid rounded"></div>
+              <div class="col"><img src="car4.jpg" alt="Carnaval 4" class="img-fluid rounded"></div>
+            </div>
+          </div>
+
+          <div class="text-center mb-5">
+            <h4>Bloquinho Gente Miúda</h4>
+            <p>Fotografias do bloquinho de carnaval infantil, Gente Miúda, 2026. Projeto pessoal.</p>
+            <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center">
+              <div class="col"><img src="cri1.jpg" alt="Gente Miúda 1" class="img-fluid rounded"></div>
+              <div class="col"><img src="cri2.jpg" alt="Gente Miúda 2" class="img-fluid rounded"></div>
+              <div class="col"><img src="cri3.jpg" alt="Gente Miúda 3" class="img-fluid rounded"></div>
+              <div class="col"><img src="cri4.jpg" alt="Gente Miúda 4" class="img-fluid rounded"></div>
+              <div class="col"><img src="cri5.jpg" alt="Gente Miúda 5" class="img-fluid rounded"></div>
+            </div>
+          </div>
+
+          <div class="text-center mb-5">
+            <h4>Kenner</h4>
+            <p>Projeto do curso de Fashion Filmmaking. Nele, devíamos criar uma campanha de uma marca do mundo da moda, sendo a escolhida a célebre marca de chinelos, Kenner.</p>
+            <div class="row row-cols-1 row-cols-md-2 g-3 justify-content-center">
+              <div class="col"><img src="ken1.jpg" alt="Kenner 1" class="img-fluid rounded"></div>
+              <div class="col"><img src="ken2.jpg" alt="Kenner 2" class="img-fluid rounded"></div>
+              <div class="col"><img src="ken4.jpg" alt="Kenner 3" class="img-fluid rounded"></div>
+              <div class="col"><img src="ken3.jpg" alt="Kenner 4" class="img-fluid rounded"></div>
+            </div>
+          </div>
+
+          <div class="text-center mb-5">
+            <h4>Vilarejo</h4>
+            <p>Fotos still da gravação do videoclipe de Vilarejo. Trabalho da matéria História do Audiovisual, primeiro semestre.</p>
+            <div class="row row-cols-1 row-cols-md-2 g-3 justify-content-center">
+              <div class="col"><img src="vila1.jpg" alt="Vilarejo Still 1" class="img-fluid rounded"></div>
+              <div class="col"><img src="vila2.jpg" alt="Vilarejo Still 2" class="img-fluid rounded"></div>
+              <div class="col"><img src="vila3.jpg" alt="Vilarejo Still 3" class="img-fluid rounded"></div>
+              <div class="col"><img src="vila4.jpg" alt="Vilarejo Still 4" class="img-fluid rounded"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="videos" role="tabpanel">
+          <h3 class="text-center mb-4">Vídeos</h3>
+          <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            
+            <div class="col">
+              <a href="https://youtu.be/n_ytQtFcQGo?si=yowhoN5mkIjPD2Pf" target="_blank" class="text-decoration-none">
+                <div class="card video-card text-light h-100">
+                  <img src="blz.jpg" class="card-img-top img-fluid" alt="Vídeo 1 Thumbnail">
+                  <div class="card-body">
+                    <h4 class="card-title" style="color: #7f5da3;">Beleza Também Envelhece</h4>
+                    <p class="card-text" style="color: #97c2c5;">Projeto para a matéria Linguagem do Audiovisual, para fazermos um vídeo minuto de tema livre.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="https://youtu.be/AV7qVX0Vmdo?si=mdV29EESO5QHFROm" target="_blank" class="text-decoration-none">
+                <div class="card video-card text-light h-100">
+                  <img src="vila2.jpg" class="card-img-top img-fluid" alt="Vídeo 2 Thumbnail">
+                  <div class="card-body">
+                    <h4 class="card-title" style="color: #7f5da3;">Vilarejo</h4>
+                    <p class="card-text" style="color: #97c2c5;">Projeto da matéria História do Audiovisual, em que deveríamos realizar um videoclipe.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="https://youtu.be/HSdvizJi3rg?si=ZfdT2biPh9RNZMBU" target="_blank" class="text-decoration-none">
+                <div class="card video-card text-light h-100">
+                  <img src="dialogo.jpg" class="card-img-top img-fluid" alt="Vídeo 3 Thumbnail">
+                  <div class="card-body">
+                    <h4 class="card-title" style="color: #7f5da3;">Diálogo</h4>
+                    <p class="card-text" style="color: #97c2c5;">Projeto de Ciclos de Produção, que deveríamos adaptar um conto.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="tab-pane fade text-center contato" id="contato" role="tabpanel">
+      <h2>Contato</h2>
+      <p>Email: sofia.jenckel@acad.espm.br</p>
+      <p>Telefone: (11) 96901-9828</p>
+      <p class="mt-4">Redes Sociais:</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://www.linkedin.com/in/sofia-de-nigris-jenckel-a6b3473aa?utm_source=share_via&utm_content=profile&utm_medium+member_ios" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/steel.sz" target="_blank">Instagram</a>
+        <a href="https://www.behance.net/steel3" target="_blank">Behance</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p class="m-0">&copy; 2026 Sofia Jenckel - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
